@@ -23,7 +23,7 @@ if (shop) {
 
                 // 从购物车cookie数据中筛选当前遍历的数据
 
-                // let current = shop.filter(val => val.id == elm.id);
+                let current = shop.filter(val => val.id == elm.id);
 
 
 
@@ -36,7 +36,7 @@ if (shop) {
             <div class="wupin-you">
                 <h2 class="wupin-ming">小米10</h2>
                 <p class="wupin-jieshao">
-                ${elm.title}
+                ${elm.title}${elm.particulars}
                 </p>
                 <p class="ziying">小米自营</p>
                 <div class="wupin-jiage">${parseFloat(elm.price).toFixed(2)}元</div>
@@ -78,11 +78,7 @@ if (shop) {
                         </a>
                     </div>
                 </div>
-            </div>
-                
-                
-                
-                `;
+            </div>`;
 
                 //     temp += `<li class="item">
                 //     <div class="p-check">
