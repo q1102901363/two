@@ -1,0 +1,235 @@
+@charset 'utf-8';
+.section {
+  background: #f5f5f5;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+.section h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1em 0;
+}
+.xiaojieshao {
+  position: relative;
+  z-index: 4;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
+}
+.xiaojieshao .nav-bar {
+  position: relative;
+  height: 63px;
+  width: 100%;
+  margin-top: 0;
+  color: #616161;
+}
+.xiaojieshao .nav-bar h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #424242;
+  float: left;
+}
+.xiaojieshao .nav-bar .left {
+  margin: 17px 0 0 0;
+  float: left;
+  margin-left: 5px;
+  font-size: 12px;
+  margin-top: 21px;
+}
+.xiaojieshao .nav-bar .right {
+  float: right;
+  margin: 17px 0 0 0;
+}
+.xiaojieshao .nav-bar .separator {
+  margin: 0 0.5em;
+  color: #424242;
+}
+.body-wupin {
+  margin-left: 20px;
+}
+.body-wupin .taozi {
+  flex: 1;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 12px;
+  display: flex;
+  width: 1226px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.body-wupin .wupin-tu {
+  width: 606px;
+  position: relative;
+}
+.body-wupin .wupin-tu .fangtu {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  width: 560px;
+}
+.body-wupin .wupin-tu .fangtu img {
+  width: 560px;
+  height: 560px;
+}
+.body-wupin .wupin-ming {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #212121;
+}
+.body-wupin .wupin-jieshao {
+  color: #b0b0b0;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  line-height: 1.5;
+}
+.body-wupin .ziying {
+  color: #ff6700;
+  margin-bottom: 0;
+}
+.body-wupin .xian {
+  margin-top: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.body-wupin .wupin-jiage {
+  display: block;
+  font-size: 18px;
+  line-height: 1;
+  color: #ff6700;
+  padding: 12px 0 10px;
+}
+.body-wupin .wupin-dizhi {
+  margin: 20px 0;
+}
+.body-wupin .wupin-dizhi .wupin-dizhi-1 {
+  padding: 30px 50px;
+  position: relative;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+}
+.body-wupin .wupin-dizhi .wupin-dizhi-1 .wupin-dizhi-zi {
+  display: inline;
+  margin-right: 14px;
+}
+.body-wupin .wupin-dizhi .wupin-dizhi-1 i {
+  position: absolute;
+  left: 20px;
+  top: 26px;
+  font-size: 20px;
+  color: #999;
+}
+.body-wupin .wupin-banben {
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+}
+.body-wupin .wupin-banben .banben-title {
+  font-size: 18px;
+}
+.body-wupin .wupin-banben ul {
+  margin: 0;
+  padding: 0;
+}
+.body-wupin .wupin-banben ul li {
+  z-index: 3;
+  border-color: #ff6700;
+  margin-right: 12px;
+  margin-top: 10px;
+  line-height: 42px;
+  height: 42px;
+  position: relative;
+  border: 1px solid #e0e0e0;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  float: left;
+  width: 292px;
+  font-size: 16px;
+  text-align: center;
+}
+.body-wupin .wupin-banben ul li a {
+  color: #ff6700;
+  display: block;
+}
+.body-wupin .wupin-zongji {
+  background: #f9f9fa;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.body-wupin .wupin-zongji .xuanzede {
+  line-height: 30px;
+  color: #616161;
+}
+.body-wupin .wupin-zongji .xuanzede span {
+  line-height: 30px;
+  color: #616161;
+}
+.body-wupin .wupin-zongji .zongji {
+  color: #ff6700;
+  font-size: 24px;
+  padding-top: 20px;
+}
+.body-wupin .wupin-gouwuche {
+  margin: 10px 0 20px 0;
+}
+.body-wupin .wupin-gouwuche .huodaole {
+  display: inline-block;
+  margin-right: 10px;
+}
+.body-wupin .wupin-gouwuche .huodaole a {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #b0b0b0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  border-color: #ff6700;
+  background: #fff;
+  color: #ff6700;
+  width: 298px;
+  height: 52px;
+  line-height: 52px;
+  font-size: 16px;
+}
+.body-wupin .wupin-gouwuche .xihuan {
+  display: inline-block;
+  vertical-align: top;
+}
+.body-wupin .wupin-gouwuche .xihuan a {
+  display: block;
+  width: 140px;
+  height: 52px;
+  line-height: 52px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #b0b0b0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  background: #b0b0b0;
+}
+.body-wupin .wupin-gouwuche .xihuan a i {
+  font-size: 22px;
+  line-height: 23px;
+  vertical-align: -4px;
+  margin-right: 5px;
+}
