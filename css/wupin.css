@@ -191,22 +191,6 @@
   display: inline-block;
   margin-right: 10px;
 }
-.body-wupin .wupin-gouwuche .huodaole a {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  border: 1px solid #b0b0b0;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.4s;
-  border-color: #ff6700;
-  background: #fff;
-  color: #ff6700;
-  width: 298px;
-  height: 52px;
-  line-height: 52px;
-  font-size: 16px;
-}
 .body-wupin .wupin-gouwuche .xihuan {
   display: inline-block;
   vertical-align: top;

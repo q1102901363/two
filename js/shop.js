@@ -1,7 +1,7 @@
 import $ from './library/jquery.js';
 import cookie from './library/cookie.js';
 
-let shop = cookie.get('shop');
+
 
 if (shop) {
     shop = JSON.parse(shop);
