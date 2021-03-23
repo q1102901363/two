@@ -32,7 +32,7 @@
     // var_dump($resuslt);
     if($resuslt->num_rows>0){
         echo '<script>alert("用户名已存在");</script>';
-        echo '<script>location.href="../html/注册.html"</script>';
+        echo '<script>location.href="../html/zhuce.html"</script>';
         $mysqli->close(); // 关闭连接
         die();  // 终止代码往下执行
     }
@@ -46,6 +46,6 @@
 
     if($res){
         echo '<script>alert("注册成功");</script>';
-        echo '<script>location.href="../html/登录.html"</script>';
+        echo '<script>location.href="../html/denglu.html"</script>';
     }
 ?>

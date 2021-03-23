@@ -27,9 +27,9 @@
 
 
         echo '<script>alert("登陆成功")</script>';
-        echo '<script>location.href="../html/首页.html"</script>';
+        echo '<script>location.href="../html/index.html"</script>';
     }else{
         echo '<script>alert("用户名或密码错误")</script>';
-        echo '<script>location.href="../html/登录.html"</script>';
+        echo '<script>location.href="../html/denglu.html"</script>';
     }
 ?>

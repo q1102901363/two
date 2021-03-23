@@ -1,5 +1,5 @@
 <?php
-    include('../interface/library/conn.php');
+    include('./library/conn.php');
 
     $sql = "select * from product";
 

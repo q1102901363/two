@@ -1,5 +1,5 @@
 <?php
-    include('../interface/library/conn.php');
+    include('./library/conn.php');
 
     $id = $_REQUEST['id'];
 
