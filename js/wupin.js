@@ -12,18 +12,42 @@ $.ajax({
     dataType: "json",
     success: function(res) {
         let picture = JSON.parse(res.picture);
+        let shuliang = parseInt($("#num").text());
 
-
+        let temp1 = `<div class="nav-bar">
+        <div class="container">
+            <h2>${res.title}</h2>
+            <div class="con">
+                <div class="left">
+                    <span class="separator">|</span>
+                    <a href="">${res.title}</a>
+                    <span class="separator">|</span>
+                    <a href="">青春版</a>
+                    <span class="separator">|</span>
+                    <a href="">${res.details}</a>
+                </div>
+                <div class="right">
+                    <a href="">概述</a>
+                    <span class="separator">|</span>
+                    <a href="">F码通道</a>
+                    <span class="separator">|</span>
+                    <a href="">咨询客服</a>
+                    <span class="separator">|</span>
+                    <a href="">用户评价</a>
+                </div>
+            </div>
+        </div>
+    </div>`;
 
         let temp = `<div class="wupin-tu">
         <div class="fangtu">
-            <img src="../${picture[0].src}" alt="">
+            <img src="../${picture[1].src}" alt="">
         </div>
     </div>
     <div class="wupin-you">
-        <h2 class="wupin-ming">小米10</h2>
+        <h2 class="wupin-ming">${res.title}</h2>
         <p class="wupin-jieshao">
-        ${res.title}
+        ${res.particulars}
         </p>
         <p class="ziying">小米自营</p>
         <div class="wupin-jiage">${parseFloat(res.price).toFixed(2)}元</div>
@@ -101,40 +125,55 @@ $.ajax({
         // <div>
         // `;
 
+
+
+        // $('.head-right>.car').append(temp2);
+        $('.xiaojieshao').append(temp1);
         $('.taozi').append(temp).find('#add').on('click', function() {
-            addItem(res.id, res.price, $('#num').val());
+            shuliang++;
+
+            addItem(res.id, res.price, shuliang);
         });
+
     }
 });
 
 
 function addItem(id, price, num) {
-    let shop = cookie.get('shop');
+    let gouwuche = cookie.get('gouwuche');
     let product = {
         id,
         price,
         num
-    };
 
-    if (shop) {
-        shop = JSON.parse(shop);
+    };
+    console.log(id, price, num);
+    if (gouwuche) {
+        gouwuche = JSON.parse(gouwuche);
+
+        console.log(gouwuche);
 
         // 判断当前的商品id在cookie数据中是否存在
-        if (shop.some(el => el.id === id)) {
-            shop.forEach(elm => {
-                elm.id === id ? elm.num = num : null;
+        if (gouwuche.some(el => el.id === id)) {
+            gouwuche.forEach(elm => {
+                if (elm.id === id) {
+                    elm.num = num;
+                    $('#num').text(num);
+                } else {
+                    null;
+                }
             });
         } else {
-            shop.push(product);
+            gouwuche.push(product);
         }
 
 
     } else { // 没有存cookie的情况
-        shop = []; // 初始化成数组
-        shop.push(product);
+        gouwuche = []; // 初始化成数组
+        gouwuche.push(product);
     }
 
-    cookie.set('shop', JSON.stringify(shop), 1);
+    cookie.set('gouwuche', JSON.stringify(gouwuche), 1);
 
 
 }

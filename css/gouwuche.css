@@ -333,6 +333,8 @@
   overflow: hidden;
 }
 .gou-body .jiesuan .gu-1 .item-table .item-tu img {
+  width: 80px;
+  height: 80px;
   border: 0;
 }
 .gou-body .jiesuan .gu-1 .item-table .item-shangpin {
@@ -351,7 +353,9 @@
   margin: 0;
 }
 .gou-body .jiesuan .gu-1 .item-table .item-shangpin h3 a {
+  width: 380px;
   color: #424242;
+  overflow: hidden;
 }
 .gou-body .jiesuan .gu-1 .item-table .item-danjia {
   width: 140px;
