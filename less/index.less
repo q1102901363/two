@@ -827,8 +827,12 @@ a{
         }
 
         .lunbo2{
-            float: left;
-
+            float: right;
+            width: 986px;
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+            box-sizing: border-box;
             .woot{
                 margin: 0;
                 padding: 0;
@@ -1495,4 +1499,48 @@ a{
         }
     }
 
+}
+
+// 幻灯片
+
+.msg-box{
+    width: 200%;
+    height: 320px;
+    position: absolute;
+    left: 0;
+    transition: left 1s;
+    box-sizing: border-box;
+    .msg-r,
+    .msg-rr{
+        width: 975px;
+        height: 320px;
+        display: flex;
+        justify-content: space-around;
+        
+        div{
+            width: 234px;
+            height: 300px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+.fl{
+    float: left;
+
+    button{
+        border: #CCCCCC 1px solid;
+        width: 30px;
+        height: 30px;
+    }
+}
+.fr{
+    float: right;
+}
+.anniu{
+    position: absolute;
+    right: 5px;
+    top: 20px;
 }

@@ -1,4 +1,5 @@
 import $ from './library/jquery.js';
+import cookie from './library/cookie.js';
 
 $.ajax({
     type: "get",
@@ -25,3 +26,9 @@ $.ajax({
 
     }
 });
+
+$(function() {
+    let neme = cookie.get('username');
+    // $('.deng').text(neme);
+    console.log(neme);
+})

@@ -751,7 +751,12 @@ a {
   width: 234px;
 }
 .page .seckill-bd .lunbo2 {
-  float: left;
+  float: right;
+  width: 986px;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
 }
 .page .seckill-bd .lunbo2 .woot {
   margin: 0;
@@ -1330,4 +1335,45 @@ a {
 .mi-register .mi-w .treaty a {
   color: #000000;
   text-decoration: none;
+}
+.msg-box {
+  width: 200%;
+  height: 320px;
+  position: absolute;
+  left: 0;
+  transition: left 1s;
+  box-sizing: border-box;
+}
+.msg-box .msg-r,
+.msg-box .msg-rr {
+  width: 975px;
+  height: 320px;
+  display: flex;
+  justify-content: space-around;
+}
+.msg-box .msg-r div,
+.msg-box .msg-rr div {
+  width: 234px;
+  height: 300px;
+}
+.msg-box .msg-r div img,
+.msg-box .msg-rr div img {
+  width: 100%;
+  height: 100%;
+}
+.fl {
+  float: left;
+}
+.fl button {
+  border: #CCCCCC 1px solid;
+  width: 30px;
+  height: 30px;
+}
+.fr {
+  float: right;
+}
+.anniu {
+  position: absolute;
+  right: 5px;
+  top: 20px;
 }

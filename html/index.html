@@ -29,6 +29,8 @@
 
     <script src="../js/index.js" type="module"></script>
     <script src="../js/jquery.lazyload.js"></script>
+    <script src="../js/library/cookie.js"></script>
+
 
     <!-- 轮播图效果 -->
     <script src="../js/picMove.js"></script>
@@ -98,6 +100,16 @@
                     $(".shang").slideUp().hide('fast');    
                 }       
             });
+
+
+
+            $("#anniu1").click(function() {
+                $(".msg-box").css("left", 0);
+            });
+            $("#anniu2").click(function() {
+                $(".msg-box").css("left", -978);
+            });
+
 
 
         })
@@ -202,7 +214,7 @@
                     <div></div>
                 </div>
                 <div class="head-centre">
-                    <a href="../html/denglu.html">登录</a>
+                    <a href="../html/denglu.html" class="deng">登录</a>
                     <span class="se">|</span>
                     <a href="../html/zhuce.html">注册</a>
                     <span class="se">|</span>
@@ -1976,7 +1988,40 @@
                         </div>
                     </div>
                     <div class="lunbo2 span16">
-
+                        <div class="msg-box fl">
+                            <div class="msg-r fl">
+                                <div>
+                                    <a href=""><img src="../img/米家蓝牙白色.png" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="../img/米家蓝牙白色.png" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="../img/米家蓝牙白色.png" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="../img/米家蓝牙白色.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="msg-rr fl">
+                                <div>
+                                    <a href=""><img src="../img/小米记事本.png" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="../img/小米记事本.png" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="../img/小米记事本.png" alt=""></a>
+                                </div>
+                                <div>
+                                    <a href=""><img src="../img/小米记事本.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fr anniu">
+                        <button id="anniu1">←</button>
+                        <button id="anniu2">→</button>
                     </div>
                 </div>
             </div>

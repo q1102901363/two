@@ -14,9 +14,9 @@
     // $_REQUEST[]  接收get/post数据
     $username = $_REQUEST['username'];
     $password = $_REQUEST['password'];
-    $email = $_REQUEST['email'];
-    $address = $_REQUEST['address'];
-    $phone = $_REQUEST['phone'];
+    // $email = $_REQUEST['email'];
+    // $address = $_REQUEST['address'];
+    // $phone = $_REQUEST['phone'];
 
 
     // echo "$username  $password  $email  $address  $phone  $sex";
@@ -38,7 +38,7 @@
     }
 
     // 用户名不存在的情况需要将数据写入数据库
-    $insertSql = "insert into users (username,password,email,address,phone) values ('$username','$password','$email','$address','$phone')";
+    $insertSql = "insert into users (username,password) values ('$username','$password')";
     
     // 执行添加操作 会返回一个布尔值
     $res = $mysqli->query($insertSql);  

@@ -94,7 +94,9 @@ if (gouwuche) {
             $('.qujiesuan').on('click', function() {
 
                 alert("购买成功");
-
+                $(".gou-tuzi").css("display", "block");
+                $(".jiesuan,.allqian").css("display", "none");
+                cookie.remove(gouwuche);
 
             })
 
