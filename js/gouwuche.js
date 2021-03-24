@@ -197,4 +197,9 @@ $(function() {
 
 
 
+});
+$(function() {
+    let neme = cookie.get('username');
+    $('.deng').text(neme);
+    console.log(neme);
 })

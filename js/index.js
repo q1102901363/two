@@ -29,6 +29,6 @@ $.ajax({
 
 $(function() {
     let neme = cookie.get('username');
-    // $('.deng').text(neme);
+    $('.deng').text(neme);
     console.log(neme);
 })

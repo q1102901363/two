@@ -97,7 +97,7 @@ $.ajax({
             font-size: 16px;">
             </div>
             <div class="xihuan">
-                <a href="">
+                <a>
                     <i class="glyphicon glyphicon-heart"></i> 喜欢
                 </a>
             </div>
@@ -174,6 +174,9 @@ function addItem(id, price, num) {
     }
 
     cookie.set('gouwuche', JSON.stringify(gouwuche), 1);
-
-
-}
+};
+$(function() {
+    let neme = cookie.get('username');
+    $('.deng').text(neme);
+    console.log(neme);
+})
